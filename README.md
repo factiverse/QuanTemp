@@ -2,7 +2,8 @@
 A repository for baselines to verify Numerical Claims.
 
 An example from dataset
-```    {
+```
+{
         "country_of_origin": "usa",
         "label": "Conflicting",
         "url": "https://www.politifact.com/factchecks/2010/aug/08/donald-carcieri/carcieri-says-tax-repeal-spawned-new-business/",
