@@ -1,0 +1,5 @@
+transformers==4.35.2
+scikit-learn
+pandas
+numpy
+sentence_transformers

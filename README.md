@@ -16,3 +16,33 @@ An example from dataset
 ```
 
 The pipeline consists of claim decomposition, evidence retrieval and stance detection steps.
+
+The following is the project structure
+
+###  :file_folder: File Structure
+
+
+```
+.
+├── data
+│   ├── decomposed_questions
+│   │   ├── test_claimdecomp.csv
+│   │   └── test_programfc.json
+│   ├── raw_data
+│   │   ├── test_claims_quantemp.json
+│   │   ├── train_claims_quantemp.json
+│   │   └── val_claims_quantemp.json
+│   └── bm25_scored_evidence
+│       ├── bm25_top_100_claimdecomp.json
+│       
+├── code
+│    ├── data_processing
+│        ├──
+│    │   ├── test_claimdecomp.csv
+│    │   └── test_programfc.json
+│    ├── utils
+│    │   ├── load_veracity_predictor.py
+│    ├── nli_inference
+│    │   ├── veracity_prediction.py
+├── requirements.txt
+└── README.md
