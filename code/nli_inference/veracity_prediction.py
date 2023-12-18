@@ -1,21 +1,22 @@
 """Veracity prediction for claimdecomp.
 
-python3 veracity_prediction.py --args
+python3 veracity_prediction.py --test_path path to test file
+-- model_path path to model --questions_path path to decomposed questions from claim
+-- output_path output/...
 """
 import json
 import argparse
-from utils.data_loader import read_json
+from code.utils.data_loader import read_json
 from typing import Dict, List
 import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
 import os
 from torch import Tensor
-from utils.load_veracity_predictor import VeracityClassifier
+from code.utils.load_veracity_predictor import VeracityClassifier
 from sentence_transformers import SentenceTransformer
 
 model = SentenceTransformer("paraphrase-MiniLM-L6-v2")
 dir_path = os.path.dirname(os.path.realpath(os.getcwd()))
-
 
 def get_top_k_similar_instances(
     sentence: str, data_emb: Tensor, data: List[Dict],
@@ -60,10 +61,7 @@ def get_verification(config):
         config["questions_path"], sep="@"
     )
 
-    model_name = os.path.join(
-        dir_path,
-        config["model_path"],
-    )
+    model_name = config["model_path"]
 
     nli_model = VeracityClassifier(
         base_model=config["base_model"], model_name=model_name
@@ -161,7 +159,7 @@ if __name__ == "__main__":
                         default="models/finqa_roberta_claimdecomp_early_stop_2/model_weights.zip",
                         help="Path to the tokenizer")
     parser.add_argument("--questions_path", type=str,
-                        default="data/decomposed_questions/test/decomposed_claim_yes_no_questions.csv",
+                        default="data/decomposed_questions/test/test_claimdecomp.csv",
                         help="Path to the decomposed questions")
     parser.add_argument("--output_path", type=str,
                         default="finqa_roberta_claimdecomp_test",
