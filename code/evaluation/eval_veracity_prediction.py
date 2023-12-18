@@ -71,11 +71,11 @@ def read_claims_data(test_path: str, category: str, category_wise: bool) -> List
     for dat in data:
     #
      #
-     if category_wise:
-        if dat["taxonomy_label"] == category:
+        if category_wise:
+            if dat["taxonomy_label"] == category:
+                categorized_data.append(dat)
+        else:
             categorized_data.append(dat)
-    else:
-        categorized_data.append(dat)
     return categorized_data
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -84,7 +84,7 @@ if __name__ == "__main__":
                         default="data/raw_data/test_claims_quantemp.json",
                         help="Path to the test data")
     parser.add_argument("--output_path", type=str,
-                        default="finqa_roberta_claimdecomp_test",
+                        default="output/finqa_roberta_claimdecomp_test.csv",
                         help="Path to the output predictions")
     parser.add_argument("--category", type=str,
                         default="statistical",
