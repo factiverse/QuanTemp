@@ -23,7 +23,6 @@ The following is the project structure
 
 
 ```
-.
 ├── data
 │   ├── decomposed_questions
 │   │   ├── test_claimdecomp.csv
@@ -46,7 +45,7 @@ The following is the project structure
 │    │   ├── veracity_prediction.py
 ├── requirements.txt
 └── README.md
-´´´
+```
 
 # Setup
 pip install -r requirements.txt
