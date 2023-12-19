@@ -16,6 +16,10 @@ An example from dataset
 ```
 
 The pipeline consists of claim decomposition, evidence retrieval and stance detection steps.
+# Setup
+pip install -r requirements.txt
+
+https://drive.google.com/drive/folders/1FmaelDhJ7QwsRTs8H0B4vYliw_qjL7P-?usp=sharing . Download the models from here and dump it into models folder
 
 The following is the project structure
 
@@ -47,7 +51,4 @@ The following is the project structure
 └── README.md
 ```
 
-# Setup
-pip install -r requirements.txt
 
-https://drive.google.com/drive/folders/1FmaelDhJ7QwsRTs8H0B4vYliw_qjL7P-?usp=sharing . Download the models from here and dump it into models folder
