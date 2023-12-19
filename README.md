@@ -46,3 +46,8 @@ The following is the project structure
 │    │   ├── veracity_prediction.py
 ├── requirements.txt
 └── README.md
+
+# Setup
+pip install -r requirements.txt
+
+https://drive.google.com/drive/folders/1FmaelDhJ7QwsRTs8H0B4vYliw_qjL7P-?usp=sharing . Download the models from here and dump it into models folder
