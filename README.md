@@ -46,7 +46,7 @@ The following is the project structure
 │    │   ├── veracity_prediction.py
 ├── requirements.txt
 └── README.md
-```
+´´´
 
 # Setup
 pip install -r requirements.txt
