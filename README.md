@@ -52,3 +52,13 @@ The following is the project structure
 ```
 
 
+To reproduce results on paper for finqa-roberta-large (ELASTIC) run 
+```
+python3 code/nli_inference/veracity_prediction.py --test_path data/raw_data/test_claims_quantemp.json --bm25_evidence_path data/bm25_scored_evidence/bm25_top_100_claimdecomp.json --base_model roberta-large-mnli --model_path models/finqa_roberta_claimdecomp_early_stop_2/model_weights.zip --questions_path data/decomposed_questions/test/test_claimdecomp.csv --output_path finqa_roberta_claimdecomp_test
+```
+
+followed by
+
+```
+python3 code/evaluation/eval_veracity_prediction.py --output_path output/finqa_roberta_claimdecomp_test.csv
+```
