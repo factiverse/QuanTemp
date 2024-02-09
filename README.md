@@ -22,7 +22,7 @@ pip install -r requirements.txt
 https://drive.google.com/drive/folders/1FmaelDhJ7QwsRTs8H0B4vYliw_qjL7P-?usp=sharing . Download the models from here and dump it into models folder
 
 The following is the project structure
-
+We release the BM25 results in this repo. However, for those interested the corpus is at https://drive.google.com/drive/folders/1GYzSK0oU2MiaKbyBO3hE8kO4gdmxDjCv?usp=drive_link to encourage reporducability and need not be downloaded from search engines again. We release this as search results may drift over time.
 ###  :file_folder: File Structure
 
 
