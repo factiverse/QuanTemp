@@ -1,4 +1,4 @@
-# QuanTemp
+# QuantCheck
 A repository for baselines to verify Numerical Claims.
 
 An example from dataset
