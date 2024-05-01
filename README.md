@@ -1,5 +1,5 @@
-# QuantCheck
-A repository for baselines to verify Numerical Claims.
+# QuanTemp
+A repository for Numerical Claims. We collect and release the first set of real-world numerical claims. We create a fine-grained taxonomy for numerical claims (statistical,temporal,comparison and interval). The repository also houses the inference code for reproducing the best results in the paper. We also release the trained models and collected evidence snippets.
 
 An example from dataset
 ```
