@@ -1,6 +1,16 @@
-# QuanTemp
-A repository for Numerical Claims. We collect and release the first set of real-world numerical claims. We create a fine-grained taxonomy for numerical claims (statistical,temporal,comparison and interval). The repository also houses the inference code for reproducing the best results in the paper. We also release the trained models and collected evidence snippets.
 
+<p align="center">
+  <img src="quantemp.png" />
+</p>
+
+
+# QuanTemp
+
+A benchmark of Quantitative and Temporal Claims
+This is repository for Numerical Claims. We collect and release the first set of real-world numerical claims. We create a fine-grained taxonomy for numerical claims (statistical,temporal,comparison and interval). The repository also houses the inference code for reproducing the best results in the paper. We also release the trained models and collected evidence snippets.
+<p align="center">
+  <img src="bcqa_neurips.001.jpeg" />
+</p>
 An example from dataset
 ```
 {
