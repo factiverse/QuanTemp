@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="quantemp.png" />
+  <img src="quantemp-logo-480.png" />
 </p>
 
 
