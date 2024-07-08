@@ -75,3 +75,21 @@ followed by
 ```
 python3 code/evaluation/eval_veracity_prediction.py --output_path output/finqa_roberta_claimdecomp.csv
 ```
+# Citing the work
+To cite this work please use the following bib entry
+
+```
+@inproceedings{V:2024:SIGIR,
+title = {{QuanTemp}: A real-world open-domain benchmark for fact-checking numerical claims},
+author = {Venktesh V and Abhijit Anand and Avishek Anand and Vinay Setty},
+url = {https://arxiv.org/pdf/2403.17169},
+doi = {10.1145/3626772.3657874},
+year = {2024},
+date = {2024-06-26},
+booktitle = {Proceedings of the 47th International ACM SIGIR Conference on Research and Development in Information Retrieval},
+series = {SIGIR '24},
+keywords = {},
+pubstate = {published},
+tppubtype = {inproceedings}
+}
+```
