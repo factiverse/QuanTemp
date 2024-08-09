@@ -78,10 +78,14 @@ python3 code/evaluation/eval_veracity_prediction.py --output_path output/finqa_r
 
 # More models
 
+
 |:----------:|:--------:|:----:|
 | retrieved evidence       | Finqa-roberta (best result in ablations table)  | [Link](https://drive.google.com/file/d/1LR-w4kZ-r8KNV3IcXvvxMREWV2vQXx8Y/view?usp=drive_link) |
 | retrieved evidence     | Claimdecomp (Roberzta-large-mnli) the best result in main result table   | [Link](https://drive.google.com/file/d/1klH8TJsxRDsiVj5ewkbS8AHOqlRxqH03/view?usp=drive_link) |
 | Oracle        | roberta-large-mnli ( the oracle results in main result table)    | [Link](https://drive.google.com/file/d/1Lt4bnwgQ1Vw1B8okOjO0QmdyuVT8nwVt/view?usp=drive_link) |
+
+
+
 # Citing the work
 To cite this work please use the following bib entry
 
