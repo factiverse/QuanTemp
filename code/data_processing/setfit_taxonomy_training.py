@@ -92,7 +92,7 @@ def create_setfit_data(train: pd.DataFrame,
 
 
 data = pd.read_csv(
-    "/Users/venktesh_1/Downloads/factiverse/complex_num_facts_categorized_subset.csv", sep="@")
+    "/data/complex_num_facts_categorized_subset.csv", sep="@")
 train, val = train_test_split(data, test_size=0.2, random_state=42)
 train, test = train_test_split(train, test_size=0.2, random_state=42)
 data_files = create_setfit_data(train, test, val)
